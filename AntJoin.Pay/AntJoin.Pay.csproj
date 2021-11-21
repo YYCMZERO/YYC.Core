@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Version>1.5.0.1</Version>
+    <AssemblyVersion>1.1.2.0</AssemblyVersion>
+	  <IncludeSymbols>true</IncludeSymbols>
+  </PropertyGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="AlipaySDKNet.Standard" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AntJoin.Core": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}

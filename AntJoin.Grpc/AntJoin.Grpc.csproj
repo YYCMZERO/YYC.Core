@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Description>修改Grpc客户端，添加自动注册Grpc client功能</Description>
+		<IncludeSymbols>true</IncludeSymbols>
+		<Version>1.0.2</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Grpc.AspNetCore" Version="2.32.0" />
+      <PackageReference Include="Grpc.Net.Client" Version="2.32.0" />
+    </ItemGroup>
+
+</Project>

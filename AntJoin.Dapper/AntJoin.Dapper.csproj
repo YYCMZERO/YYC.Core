@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Version>1.5.0.6</Version>
+    <AssemblyVersion>1.5.0.4</AssemblyVersion>
+    <FileVersion>1.5.0.3</FileVersion>
+    <Description>更新AntJoin.Core</Description>
+	<IncludeSymbols>true</IncludeSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Cfg\**" />
+    <EmbeddedResource Remove="Cfg\**" />
+    <None Remove="Cfg\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Query\GridReader.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="MySql.Data" Version="8.0.21" />
+    <PackageReference Include="NLog" Version="4.7.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AntJoin.Core\AntJoin.Core.csproj" />
+    <ProjectReference Include="..\AntJoin.Redis\AntJoin.Redis.csproj" />
+  </ItemGroup>
+
+</Project>
